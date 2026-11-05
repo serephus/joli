@@ -35,14 +35,15 @@
       ];
     in
     {
-      githubRepositories.rust = nixit.lib.githubRepository {
+      githubRepositories.joli = nixit.lib.githubRepository {
         owner = "serephus";
-        name = "rust";
+        name = "joli";
 
-        description = "description";
-        homepage = "homepage";
+        description = "Interactive TUI line filter for finding and deleting lines in plain-text files";
+        homepage = "https://github.com/serephus/joli";
         topics = [
           "rust"
+          "joli"
         ];
         visibility = "public";
 
@@ -123,7 +124,7 @@
         devShell =
           with pkgs;
           mkShell {
-            name = "rust";
+            name = "joli";
             buildInputs = [ rust ];
           };
       }
