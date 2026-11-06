@@ -4,7 +4,7 @@ use ratatui::crossterm::event::{KeyCode, KeyEvent, KeyEventKind, KeyModifiers};
 
 use crate::document::Document;
 
-pub const PREVIEW_LIMIT: usize = 5;
+pub const PREVIEW_LIMIT: usize = 30;
 
 #[derive(Debug, Clone, Copy, PartialEq, Eq)]
 pub enum ExitAction {
